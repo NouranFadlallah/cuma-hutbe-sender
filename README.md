@@ -60,5 +60,5 @@ To use Gmail securely, you must create an App Password:
 
 ## 🏁 Running the Script
 ```bash
-python main.py
+python cuma_hutbe.py
 ```
