@@ -28,5 +28,4 @@ jobs:
           SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
           APP_PASSWORD: ${{ secrets.APP_PASSWORD }}
           RECEIVER_EMAIL: ${{ secrets.RECEIVER_EMAIL }}
-          TARGET_URL: ${{ secrets.TARGET_URL }}
         run: python cuma_hutpa.py
