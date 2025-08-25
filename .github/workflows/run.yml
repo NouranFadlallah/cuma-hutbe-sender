@@ -20,6 +20,8 @@ jobs:
 
       - name: Install dependencies
         run: |
+          apt-get update -y
+          apt-get install poppler-utils -y
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
