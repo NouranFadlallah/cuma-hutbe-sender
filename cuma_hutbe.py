@@ -47,6 +47,9 @@ def fetch_pdf_and_save_image(url: str, num: int):
             if link:
                 pdf_url = urljoin(url, link['href'])
                 print("Found PDF link:", pdf_url)
+                if " " in pdf_url:
+                    pdf_url.replace(" ", "%20")
+                    print("Fixed pdf url link:", pdf_url)
             break
 
     # Download the PDF
