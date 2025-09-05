@@ -27,7 +27,8 @@ jobs:
 
       - name: Run script
         env:
+          LANGUAGES: ${{ secrets.LANGUAGES }}
           SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
           APP_PASSWORD: ${{ secrets.APP_PASSWORD }}
-          RECEIVER_EMAIL: ${{ secrets.RECEIVER_EMAIL }}
+          RECEIVER_EMAILS: ${{ secrets.RECEIVER_EMAILS }}
         run: python cuma_hutbe.py
