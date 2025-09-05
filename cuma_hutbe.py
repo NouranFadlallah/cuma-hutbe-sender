@@ -75,7 +75,7 @@ def send_image_in_email(sender_email, receiver_email, num):
     msg['To'] = receiver_email
     msg.set_content("Attached is the latest document as an image.")
 
-    for i in num:
+    for i in range(num):
         with open(f"{image_filename}{i}.jpg", 'rb') as f:
             msg.add_attachment(f.read(), maintype='image', subtype='jpeg', filename=f"{image_filename}{i}.jpg")
 
