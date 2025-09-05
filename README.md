@@ -8,6 +8,10 @@ This Python script automatically:
 2. Extracts and downloads the PDF file of the **most recent posted hutbe**.
 3. Converts the PDF to an **image (JPEG)**.
 4. Emails the image as an attachment using your Gmail account.
+   
+## Updates
+1. Now supports multiple receiver emails.
+2. Now supports all languages available on the diyanet website.
 
 ---
 
@@ -42,9 +46,9 @@ brew install poppler
 Create a .env file in the project root with the following:
 
 ```bash
-URL=https://dinhizmetleri.diyanet.gov.tr/kategoriler/yayinlarimiz/hutbeler/english-(ingilizce)
+LANGUAGES=en,ar
 SENDER_EMAIL=your@gmail.com
-RECEIVER_EMAIL=target@example.com
+RECEIVER_EMAIL=target@example.com,target2@example.com
 APP_PASSWORD=your_gmail_app_password
 ```
 
