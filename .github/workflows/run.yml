@@ -3,7 +3,7 @@ name: Weekly Cuma Hutbe Email
 on:
   schedule:
     # Runs every Friday at 9:00 AM UTC (adjust to your timezone)
-    - cron: "30 9 * * 5"
+    - cron: "17 9 * * 5"
   workflow_dispatch:  # Allow manual run
 
 jobs:
